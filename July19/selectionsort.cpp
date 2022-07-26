@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    int n, temp, index, swap_count = 0, comp_count = 0;
+    int n, temp, index, swapCount = 0, compCount = 0;
     cin >> n;
     int arr[n];
     for (int i = 0; i < n; i++)
@@ -17,17 +17,17 @@ arr[i] = (int)rand();
             if (arr[j] < arr[index])
             {
                 index = j;
-                swap_count++;
+                swapCount++;
             }
-            comp_count++;
+            compCount++;
         }
         temp = arr[i];
         arr[i] = arr[index];
         arr[index] = temp;
     }
 
-    cout << "Number of swaps: " << swap_count << endl;
-    cout << "Number of comparisons: " << comp_count << endl;
+    cout << "Number of swaps: " << swapCount << endl;
+    cout << "Number of comparisons: " << compCount << endl;
     cout << "Sorted Array is:" << endl;
     for (int i = 0; i < n; i++)
         cout << arr[i]<<" ";
