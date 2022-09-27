@@ -15,7 +15,7 @@ void heapify(struct node *s, int i, int n)
     if (rc < n && s[min].freq > s[rc].freq)
         min = rc;
     if (min != i)
-    {
+    {                            
         int temp = s[min].freq;
         s[min].freq = s[i].freq;
         s[i].freq = temp;
