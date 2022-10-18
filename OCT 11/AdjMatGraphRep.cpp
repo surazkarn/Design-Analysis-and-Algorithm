@@ -1,9 +1,5 @@
 //implementation of Adjacency Matrix for undirected graph and directed graph
 
-
-   /*
-      This code is for constructing adjacency matrix for undirected graph, with minor change it will also work for directed graph.
-   */
    #include <bits/stdc++.h>
    using namespace std;
    int main()
